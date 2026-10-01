@@ -2,7 +2,9 @@
   "mcpServers": {
     "hyperframes": {
       "url": "https://mcp.heygen.com/mcp/hyperframes/",
-      "oauthScopes": ["openid", "profile", "email"],
+      "headers": {
+        "Authorization": "Bearer ${HYPERFRAMES_TOKEN}"
+      },
       "disabled": false,
       "autoApprove": []
     }
